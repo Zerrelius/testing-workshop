@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "vitest",
-    "test:precommit": "vitest run",
+    "test:precommit": "vitest run --reporter=verbose",
     "test:coverage": "vitest --coverage",
     "prepare": "husky isntall",
     "lint": "eslint . --ext .js",
@@ -27,8 +27,7 @@
   "lint-staged": {
     "*.js": [
       "eslint --fix",
-      "vitest run --reporter=verbose",
-      "git add"
+      "vitest run --reporter=verbose"
     ]
   },
   "husky": {
