@@ -27,7 +27,7 @@
   "lint-staged": {
     "*.js": [
       "eslint --fix",
-      "vitest related",
+      "vitest run --reporter=verbose",
       "git add"
     ]
   },
