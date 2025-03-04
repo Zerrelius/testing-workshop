@@ -60,13 +60,13 @@ describe('Strict Mode', () => {
     
     test('strict mode invalid 3', () => {
         const result = validateScore(Infinity, { strictMode: true });
-        expect(result.valid).toBe(true);
+        expect(result.valid).toBe(false);
         expect(result.errors).length > 0;
     });
     
     test('strict mode invalid 4', () => {
         const result = validateScore('80', { strictMode: true});
-        expect(result.valid).toBe(true);
+        expect(result.valid).toBe(false);
         expect(result.errors).toContain('Score muss eine Zahl sein');
     });
 });

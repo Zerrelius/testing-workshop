@@ -7,7 +7,7 @@
     "test": "vitest",
     "test:precommit": "vitest run",
     "test:coverage": "vitest --coverage",
-    "prepare": "husky",
+    "prepare": "husky isntall",
     "lint": "eslint . --ext .js",
     "lint:fix": "eslint . --ext .js --fix"
   },
